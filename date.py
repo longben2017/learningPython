@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#coding:utf-8
 #根据给定的年月日以数字形式打印出日期
 months = [
 	'January',
