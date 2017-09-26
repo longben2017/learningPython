@@ -16,7 +16,7 @@ def main():
 def _odd_iter():
     n = 1
     while True:
-        n = n + 1
+        n = n + 2
         yield n
 
 def _not_divisible(n):
