@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
-#coding:utf-8
+# coding:utf-8
 
 __author__ = 'longben2017'
 
 '''
 async web application.
-
 '''
 
-import logging;logging.basicConfig(level=logging.INFO)
-
-import asyncio,os,json,time
 from datetime import datetime
-
 from aiohttp import web
+
+import logging
+import asyncio,os,json,time
+logging.basicConfig(level=logging.INFO)
 
 def index(request):
     return web.Response(body=b'<h1>Awesome</h1>',content_type='text/html')
@@ -29,5 +28,3 @@ def init(loop):
 loop = asyncio.get_event_loop()
 loop.run_until_complete(init(loop))
 loop.run_forever()
-
-
